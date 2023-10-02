@@ -1,0 +1,73 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    background: purple;
+}
+
+.video{
+    width: 100%;
+    position: absolute;
+    top: 7%;
+}
+
+.active{
+    animation: goUp 1s linear;
+    transition: 1s;
+}
+
+.active2{
+    animation: goUp2 1s linear;
+    transition: 1s;
+}
+
+.video02{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    display: none;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    background: black;
+    color: white;
+    z-index: 1;
+    border: 1px solid white;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+
+@keyframes goUp{
+    0%{
+        top: 7%;
+    }
+
+    100%{
+        top: -107%;
+    }
+}
+
+@keyframes goUp2{
+    0%{
+        top: 105%;
+    }
+
+    100%{
+        top: 5%;
+    }
+}
